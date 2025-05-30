@@ -24,8 +24,8 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
     cors({
-        origin:"https://EduTechHub-karan.vercel.app",
-        credentials:true,
+        origin: ["https://EduTechHub-karan.vercel.app", "http://localhost:3000"],
+        credentials: true,
     })
 );
 app.use(

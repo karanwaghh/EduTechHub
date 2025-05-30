@@ -48,7 +48,7 @@ const CourseDetailsCart = ({course, paymentHandler, setConfirmationModal}) => {
 
     return (
     <div className='rounded-lg bg-[#2C333F] absolute top-16 right-0 ' >
-        <img src={course?.thumbnail} height={"201px"} width={"384px"} alt="Course thumbnail" className='rounded-t-lg' />
+        <img src={course?.thumbnail} height={"201"} width={"384"} alt="Course thumbnail" className='rounded-lg p-auto' />
         <div className='p-6 flex flex-col gap-4' >
           <p className='font-bold text-3xl text-[#F1F2FF]' >Rs. {course?.price}</p>
           <div className='flex flex-col gap-4' >

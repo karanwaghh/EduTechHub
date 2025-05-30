@@ -48,6 +48,7 @@ exports.sendOTP = async (req, res) => {
             result = await OTP.findOne({otp:otp});
         }
 
+        console.log("Generated OTP: ", otp);
         // creating entry in DB
 
         const otpPayload = {

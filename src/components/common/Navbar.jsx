@@ -59,7 +59,7 @@ const Navbar = () => {
             {/* image */}
             <div>
                 <Link to={"/"} >
-                    <img src={Logo} alt="" width={160} height={32} loading='lazy' />
+                    <img src={Logo} alt="" width={80} height={20} loading='lazy'/>
                 </Link>
             </div>
 
@@ -96,7 +96,7 @@ const Navbar = () => {
                                                                 subLinks.map( (element, index) => {
                                                                     return(
                                                                         <Link key={index} to={`/catalog/${element.name.split(" ").join("-").toLowerCase()}`} >
-                                                                            <p className=' hover:bg-richblack-50 rounded-lg pl-4 py-4 font-medium ' >
+                                                                            <p className=' hover:bg-richblack-50 rounded-lg pl-2 py-2 font-medium' >
                                                                                 {element.name}
                                                                             </p>
                                                                         </Link>
@@ -115,7 +115,7 @@ const Navbar = () => {
                                             ) : 
                                             (
                                                 <Link to={element?.path} >
-                                                    <p className={`${ tab === element.title? "text-yellow-50 " : " text-richblack-25" } font-normal text-base py-1 px-3 `} 
+                                                    <p className={`${ tab === element.title? "text-yellow-50 " : " text-richblack-25" } font-normal text-base py-1 px-2 `} 
                                                         onClick={ () => setTab(element.title) } >
                                                         {element.title}
                                                     </p>

@@ -19,5 +19,5 @@ export const getCatalogPageData = async (categoryId) => {
         toast.error(error.message);
     }
     toast.dismiss(toastId);
-    return result; 
+    return result;
 } 
